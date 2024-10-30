@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A new Flutter project.">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="tofunmi_ecommerce_web_admin">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png"/>
+
+    <title>tofunmi_ecommerce_web_admin</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<!-- Flutter Bootstrap -->
+<script src="flutter_bootstrap.js" async></script>
+<!-- Load Firebase SDK -->
+<script type="module">
+    // Import Firebase SDK version 10.x.x modules
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
+    import { getStorage } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-storage.js";
+
+    // Your Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBiNYR-Zpioq2kMjNdRmuQKLwKI7lJbX3U",
+      authDomain: "tofunmi-ecomerce-app.firebaseapp.com",
+      projectId: "tofunmi-ecomerce-app",
+      storageBucket: "tofunmi-ecomerce-app.appspot.com",
+      messagingSenderId: "669054276512",
+      appId: "1:669054276512:web:e9f6921564a251437ccac5"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    // Initialize Firestore
+    const db = getFirestore(app);
+
+    // Initialize Firebase Storage
+    const storage = getStorage(app);
+
+  </script>
+
+<!-- Flutter entry point -->
+<script src="main.dart.js" type="application/javascript"></script>
+<script>
+  if (window.flutterWebRenderer) {
+    window.flutterWebRenderer = "auto";
+  }
+</script>
+</body>
+</html>
